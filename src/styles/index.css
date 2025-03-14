@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Neutra Text';
+  src: url('https://fonts.cdnfonts.com/css/neutra-text') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'Neutra Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebebeb;
+  color: #322625;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Custom styling for components */
+.btn-primary {
+  @apply bg-custom-blue text-custom-black px-4 py-2 rounded-md hover:bg-opacity-80;
+}
+
+.btn-secondary {
+  @apply bg-custom-yellow text-custom-black px-4 py-2 rounded-md hover:bg-opacity-80;
+}
+
+.table-header {
+  @apply bg-custom-blue text-custom-black px-4 py-2;
+}
+
+.table-row-even {
+  @apply bg-white;
+}
+
+.table-row-odd {
+  @apply bg-custom-grey bg-opacity-30;
+}
+
+.active-tab {
+  @apply bg-custom-blue text-custom-black;
+}
+
+.inactive-tab {
+  @apply bg-custom-grey text-custom-black;
+}
